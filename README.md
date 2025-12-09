@@ -216,13 +216,13 @@ This repository is licensed under the [Apache License 2.0](./LICENSE).
 ## Links
 
 - **SDCStudio**: [https://sdcstudio.axiussdc.com](https://sdcstudio.axiussdc.com)
-- **Axius SDC, Inc.**: [https://axiussdc.com](https://axiussdc.com)
-- **SDC4 Specification**: [Documentation](https://sdcstudio.axiussdc.com/docs)
+- **Axius SDC, Inc.**: [https://axius-sdc.com](https://axius-sdc.com)
+- **SDC4 Specification**: [https://semanticdatacharter.com](https://semanticdatacharter.com)
 - **NIEM**: [https://niem.gov](https://niem.gov)
 - **NIH-CDE**: [https://cde.nlm.nih.gov](https://cde.nlm.nih.gov)
 
 ---
 
 <p align="center">
-  <strong>Built with SDCStudio by <a href="https://axiussdc.com">Axius SDC, Inc.</a></strong>
+  <strong>Built with SDCStudio by <a href="https://axius-sdc.com">Axius SDC, Inc.</a></strong>
 </p>
