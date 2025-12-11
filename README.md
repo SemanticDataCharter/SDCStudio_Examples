@@ -138,9 +138,17 @@ Create your own data models from scratch:
 
 1. Visit [SDCStudio](https://sdcstudio.axiussdc.com) (or your deployment)
 2. Create a new project
-3. Upload any `.md` template from `source_templates/`
+3. Upload your own `.md` template (see below for how to create one)
 4. Watch SDCStudio process and generate outputs
 5. Download your customized packages
+
+**Creating Your Own Templates:**
+
+| Resource | Description |
+|----------|-------------|
+| [`source_templates/`](./source_templates/) | Use these examples as a starting point - copy and modify for your domain |
+| [Form2SDCTemplate](https://github.com/SemanticDataCharter/Form2SDCTemplate) | Generate templates from existing forms (PDF, images, etc.) |
+| [SDCObsidianTemplate](https://github.com/SemanticDataCharter/SDCObsidianTemplate) | Build templates in Obsidian with live preview and validation |
 
 ### Template Format Quick Reference
 
