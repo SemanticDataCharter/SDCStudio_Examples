@@ -65,44 +65,77 @@ Lightweight application packages for quick deployment and customization. Streaml
 
 > **Note**: OS packages are being populated. Check back for updates.
 
-## SDC Project Files
+## Quick Start: Deploying SDC Apps
 
-The root-level `.zip` files are complete SDC project exports that can be re-imported into SDCStudio:
+SDC apps are **standalone Django applications** that run in Docker. You deploy ONE app first, then import additional apps into it.
 
-| File | Description |
-|------|-------------|
-| `arrest_report_sdc_project.zip` | Arrest Report SDC project |
-| `incident_report_sdc_project.zip` | Incident Report SDC project |
-| `visa_application_sdc_project.zip` | Visa Application SDC project |
-| `vessel_arrival_report_sdc_project.zip` | Vessel Arrival Report SDC project |
-| `statepopulation_sdc_project.zip` | State Population SDC project |
+### Step 1: Deploy Your First App
 
-## Usage
+1. **Download an Enterprise package** from `Enterprise/` directory
+2. **Extract the ZIP** file:
+   ```bash
+   unzip Enterprise/arrest_report_sdc_project_Enterprise.zip -d my-sdc-project
+   cd my-sdc-project/arrest_report_sdc_project
+   ```
+3. **Follow the generated README.md** inside the extracted folder for complete setup instructions:
+   ```bash
+   # Copy environment file
+   cp .env.example .env
 
-### Extract and Explore
+   # Start the application
+   docker compose up -d --build
+   ```
+4. **Access your app** at http://localhost:8000 (default credentials: admin/admin123)
+
+### Step 2: Add More Data Models
+
+Once your first app is running, you can add additional data models using the built-in installer:
+
+**Via Django Admin (Recommended):**
+1. Access Django Admin: http://localhost:8000/admin/
+2. Navigate to **"SDC4 Tools"** > **"Install App from ZIP"**
+3. Upload another Enterprise ZIP file (e.g., `incident_report_sdc_project_Enterprise.zip`)
+4. The installer automatically:
+   - Extracts and installs the new app
+   - Updates Django settings and URLs
+   - Runs database migrations
+   - Uploads RDF data to GraphDB
+5. Restart your server: `docker compose restart web`
+
+**Via Command Line:**
+```bash
+# Copy the ZIP file into your project, then:
+docker compose exec web python manage.py install_app /app/path/to/incident_report_sdc_project_Enterprise.zip
+docker compose restart web
+```
+
+The home page at http://localhost:8000 automatically lists all installed apps.
+
+### Benefits of Multi-App Projects
+
+- **Single deployment** for related data models
+- **Shared SSO authentication** via Keycloak
+- **Unified admin interface**
+- **Common RDF store** (GraphDB) with OWL 2 reasoning
+- **Temporal versioning** for all data via SirixDB
+
+## Using Model Packages (Schema Files Only)
+
+If you only need the schema files without a running application:
 
 ```bash
 # Extract a model package
-unzip model_pkgs/Arrest-Report.zip -d arrest-report-model
+unzip model_pkgs/Arrest-Report.zip -d arrest-report-schemas
 
 # View the XSD schema
-cat arrest-report-model/*.xsd
+cat arrest-report-schemas/*.xsd
 
 # View example JSON data
-cat arrest-report-model/*.json | python -m json.tool
+cat arrest-report-schemas/*.json | python -m json.tool
 ```
 
-### Import to SDCStudio
+### XML Validation (Python)
 
-1. Log in to SDCStudio
-2. Navigate to Projects
-3. Click "Import Project"
-4. Upload any `*_sdc_project.zip` file
-5. The complete data model and components will be restored
-
-### Use Generated Schemas
-
-**XML Validation (Python):**
 ```python
 from lxml import etree
 
@@ -114,7 +147,8 @@ doc = etree.parse('my-arrest-report.xml')
 schema.assertValid(doc)
 ```
 
-**JSON Schema Validation (JavaScript):**
+### JSON Schema Validation (JavaScript)
+
 ```javascript
 const Ajv = require('ajv');
 const schema = require('./arrest-report-schema.json');
@@ -128,4 +162,5 @@ const valid = validate(myData);
 
 - [Source Templates](../source_templates/) - The input templates used to generate these packages
 - [Main README](../README.md) - Repository overview and getting started guide
-- [SDCStudio Documentation](https://sdcstudio.axiussdc.com/docs) - Full platform documentation
+- [Axius SDC](https://axius-sdc.com) - SDCStudio platform
+- [SDC4 Specification](https://semanticdatacharter.com) - Semantic Data Charter specification
