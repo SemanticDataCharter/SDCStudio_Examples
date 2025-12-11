@@ -31,7 +31,16 @@ This repository showcases **SDCStudio** capabilities through real-world examples
 | [`source_templates/`](./source_templates/) | Input templates (Markdown format) used to create data models |
 | [`downloads/`](./downloads/) | Generated output packages ready for deployment |
 
-> **Note**: These are convenience examples for demonstration purposes. The models and their semantics have not been established by domain experts and are not suited for production use without proper review.
+### What These Examples Are For
+
+These examples demonstrate SDCStudio's capabilities and can be used to:
+
+- **Learn SDC4 modeling patterns** - See how data models are structured using clusters, components, and relationships
+- **Understand the output formats** - Explore the generated XSD, XML, JSON, RDF, SHACL, and other files
+- **Test deployment workflows** - Practice deploying and configuring SDC apps before creating your own
+- **Start your own projects** - Use these as starting points and modify them for your domain
+
+> **⚠️ Important Disclaimer**: These examples are for **demonstration purposes only**. The data models and their semantics have **not been reviewed or validated by domain experts**. They are not suitable for production use without thorough review by qualified professionals in the relevant domains (law enforcement, immigration, healthcare, etc.).
 
 ---
 
@@ -95,7 +104,37 @@ SDCStudio generates comprehensive output packages for each data model:
 2. **Examine the Structure**: Note the YAML front matter, cluster hierarchy, and component reuse patterns
 3. **Download Generated Outputs**: Get the corresponding [generated package](./downloads/model_pkgs/Arrest-Report.zip) to see all outputs
 
-### Use with SDCStudio
+### Option 1: Deploy Generated Apps (Fastest)
+
+The easiest way to use these examples is with the pre-generated Enterprise apps:
+
+1. Download an Enterprise package from [`downloads/Enterprise/`](./downloads/Enterprise/)
+2. Extract and follow the README inside the package
+3. Run `docker compose up -d --build`
+4. Add more data models using the built-in app installer
+
+See [`downloads/README.md`](./downloads/README.md) for detailed deployment instructions.
+
+### Option 2: Build Your Own Implementation (Full Control)
+
+If you prefer to build a custom application using AI coding assistants (Claude, ChatGPT, Cursor, etc.):
+
+1. Download a **Model Package** from [`downloads/model_pkgs/`](./downloads/model_pkgs/)
+2. Extract the ZIP - it contains all schema files plus a `README-AI-PROMPT.md`
+3. Open `README-AI-PROMPT.md` for ready-to-use prompts and guidance
+4. Share the schema files with your AI assistant and describe your requirements
+
+The `README-AI-PROMPT.md` includes:
+- **Prompt templates** for different frameworks (Django, React, FastAPI, Reflex, etc.)
+- **Database schema mapping** options (normalized vs JSON embedding)
+- **sdcvalidator** integration for full SDC4 compliance
+- **Tips for iterating** with AI assistants
+
+This approach gives you complete control over your tech stack and architecture.
+
+### Option 3: Use with SDCStudio
+
+Create your own data models from scratch:
 
 1. Visit [SDCStudio](https://sdcstudio.axiussdc.com) (or your deployment)
 2. Create a new project
