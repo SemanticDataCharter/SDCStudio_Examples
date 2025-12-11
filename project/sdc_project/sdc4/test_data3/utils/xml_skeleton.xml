@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdc4:dm-rb46xg2fk464oqmlmyejpn2j
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:sdc4="https://semanticdatacharter.com/ns/sdc4/"
+  xsi:schemaLocation="https://semanticdatacharter.com/ns/sdc4/ https://semanticdatacharter.com/dmlib/dm-rb46xg2fk464oqmlmyejpn2j.xsd">
+  <dm-label>test_data3</dm-label>
+  <dm-language>en-US</dm-language>
+  <dm-encoding>utf-8</dm-encoding>
+  <creation_timestamp>__PLACEHOLDER__creation_timestamp</creation_timestamp>
+  <instance_id>__PLACEHOLDER__instance_id</instance_id>
+  <instance_version>__PLACEHOLDER__instance_version</instance_version>
+  <current-state>__PLACEHOLDER__current-state</current-state>
+  <sdc4:ms-cj4aos54s4mv1xp2k4amqx19>
+    <label>test_data3 Data Cluster</label>
+    <sdc4:ms-j9rn4hdndpr53ngj4z9nkokr>
+      <sdc4:ms-d4wc1mtex0sd3hbg7fihwpad>
+        <label>City</label>
+        <act>__PLACEHOLDER__act_d4wc1mtex0sd3hbg7fihwpad</act>
+        <ev-placeholder ct_id="d4wc1mtex0sd3hbg7fihwpad">__EV_PLACEHOLDER__d4wc1mtex0sd3hbg7fihwpad</ev-placeholder>
+        <vtb>__PLACEHOLDER__vtb_d4wc1mtex0sd3hbg7fihwpad</vtb>
+        <vte>__PLACEHOLDER__vte_d4wc1mtex0sd3hbg7fihwpad</vte>
+        <tr>__PLACEHOLDER__tr_d4wc1mtex0sd3hbg7fihwpad</tr>
+        <modified>__PLACEHOLDER__modified_d4wc1mtex0sd3hbg7fihwpad</modified>
+        <latitude>__PLACEHOLDER__latitude_d4wc1mtex0sd3hbg7fihwpad</latitude>
+        <longitude>__PLACEHOLDER__longitude_d4wc1mtex0sd3hbg7fihwpad</longitude>
+        <xdstring-value>__PLACEHOLDER__xdstring-value_d4wc1mtex0sd3hbg7fihwpad</xdstring-value>
+        <xdstring-language>__PLACEHOLDER__xdstring-language_d4wc1mtex0sd3hbg7fihwpad</xdstring-language>
+      </sdc4:ms-d4wc1mtex0sd3hbg7fihwpad>
+    </sdc4:ms-j9rn4hdndpr53ngj4z9nkokr>
+    <sdc4:ms-hvvnlkmbsel30mzc2hv5l7tg>
+      <sdc4:ms-zvstazokgwfad9ua6in2npc5>
+        <label>First Name</label>
+        <act>__PLACEHOLDER__act_zvstazokgwfad9ua6in2npc5</act>
+        <ev-placeholder ct_id="zvstazokgwfad9ua6in2npc5">__EV_PLACEHOLDER__zvstazokgwfad9ua6in2npc5</ev-placeholder>
+        <vtb>__PLACEHOLDER__vtb_zvstazokgwfad9ua6in2npc5</vtb>
+        <vte>__PLACEHOLDER__vte_zvstazokgwfad9ua6in2npc5</vte>
+        <tr>__PLACEHOLDER__tr_zvstazokgwfad9ua6in2npc5</tr>
+        <modified>__PLACEHOLDER__modified_zvstazokgwfad9ua6in2npc5</modified>
+        <latitude>__PLACEHOLDER__latitude_zvstazokgwfad9ua6in2npc5</latitude>
+        <longitude>__PLACEHOLDER__longitude_zvstazokgwfad9ua6in2npc5</longitude>
+        <xdstring-value>__PLACEHOLDER__xdstring-value_zvstazokgwfad9ua6in2npc5</xdstring-value>
+        <xdstring-language>__PLACEHOLDER__xdstring-language_zvstazokgwfad9ua6in2npc5</xdstring-language>
+      </sdc4:ms-zvstazokgwfad9ua6in2npc5>
+    </sdc4:ms-hvvnlkmbsel30mzc2hv5l7tg>
+    <sdc4:ms-epzpzi4avz09bqgg3by4t31i>
+      <sdc4:ms-jrzt7pvb6xuwjshwftppgbxp>
+        <label>Last Name</label>
+        <act>__PLACEHOLDER__act_jrzt7pvb6xuwjshwftppgbxp</act>
+        <ev-placeholder ct_id="jrzt7pvb6xuwjshwftppgbxp">__EV_PLACEHOLDER__jrzt7pvb6xuwjshwftppgbxp</ev-placeholder>
+        <vtb>__PLACEHOLDER__vtb_jrzt7pvb6xuwjshwftppgbxp</vtb>
+        <vte>__PLACEHOLDER__vte_jrzt7pvb6xuwjshwftppgbxp</vte>
+        <tr>__PLACEHOLDER__tr_jrzt7pvb6xuwjshwftppgbxp</tr>
+        <modified>__PLACEHOLDER__modified_jrzt7pvb6xuwjshwftppgbxp</modified>
+        <latitude>__PLACEHOLDER__latitude_jrzt7pvb6xuwjshwftppgbxp</latitude>
+        <longitude>__PLACEHOLDER__longitude_jrzt7pvb6xuwjshwftppgbxp</longitude>
+        <xdstring-value>__PLACEHOLDER__xdstring-value_jrzt7pvb6xuwjshwftppgbxp</xdstring-value>
+        <xdstring-language>__PLACEHOLDER__xdstring-language_jrzt7pvb6xuwjshwftppgbxp</xdstring-language>
+      </sdc4:ms-jrzt7pvb6xuwjshwftppgbxp>
+    </sdc4:ms-epzpzi4avz09bqgg3by4t31i>
+    <sdc4:ms-gbcap6x50viwyb9g0q1nques>
+      <sdc4:ms-aiao7fzq1yqhw02vu564melh>
+        <label>Date of Birth</label>
+        <act>__PLACEHOLDER__act_aiao7fzq1yqhw02vu564melh</act>
+        <ev-placeholder ct_id="aiao7fzq1yqhw02vu564melh">__EV_PLACEHOLDER__aiao7fzq1yqhw02vu564melh</ev-placeholder>
+        <vtb>__PLACEHOLDER__vtb_aiao7fzq1yqhw02vu564melh</vtb>
+        <vte>__PLACEHOLDER__vte_aiao7fzq1yqhw02vu564melh</vte>
+        <tr>__PLACEHOLDER__tr_aiao7fzq1yqhw02vu564melh</tr>
+        <modified>__PLACEHOLDER__modified_aiao7fzq1yqhw02vu564melh</modified>
+        <latitude>__PLACEHOLDER__latitude_aiao7fzq1yqhw02vu564melh</latitude>
+        <longitude>__PLACEHOLDER__longitude_aiao7fzq1yqhw02vu564melh</longitude>
+        <!-- Optional: ReferenceRange -->
+        <normal-status>__PLACEHOLDER__normal-status_aiao7fzq1yqhw02vu564melh</normal-status>
+        <xdtemporal-date>__PLACEHOLDER__xdtemporal-date_aiao7fzq1yqhw02vu564melh</xdtemporal-date>
+      </sdc4:ms-aiao7fzq1yqhw02vu564melh>
+    </sdc4:ms-gbcap6x50viwyb9g0q1nques>
+  </sdc4:ms-cj4aos54s4mv1xp2k4amqx19>
+</sdc4:dm-rb46xg2fk464oqmlmyejpn2j>

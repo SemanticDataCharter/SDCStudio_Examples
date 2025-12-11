@@ -1,0 +1,58 @@
+{
+  "poq4ywx89zvijxwoqz8djrxj": {
+    "placeholder": "__PLACEHOLDER__xdstring-value_poq4ywx89zvijxwoqz8djrxj",
+    "ct_id": "poq4ywx89zvijxwoqz8djrxj",
+    "adapter_ctid": "hx9p5cx25vkvd3kfedxsm2pq",
+    "element_name": "xdstring-value",
+    "type": "XdString",
+    "label": "State"
+  },
+  "ac79bjkqi8906qzjujpwtlsy": {
+    "placeholder": "__PLACEHOLDER__xdcount-value_ac79bjkqi8906qzjujpwtlsy",
+    "ct_id": "ac79bjkqi8906qzjujpwtlsy",
+    "adapter_ctid": "ep5oblf14u2wknv3rsp55flm",
+    "element_name": "xdcount-value",
+    "type": "XdCount",
+    "label": "Adult Population"
+  },
+  "y0wjrexefsmsebpu0rnf8da9": {
+    "placeholder": "__PLACEHOLDER__xdstring-value_y0wjrexefsmsebpu0rnf8da9",
+    "ct_id": "y0wjrexefsmsebpu0rnf8da9",
+    "adapter_ctid": null,
+    "element_name": "xdstring-value",
+    "type": "XdString",
+    "label": "Adult Population_units"
+  },
+  "w30d6kzcdcfnjxvk94w58nfw": {
+    "placeholder": "__PLACEHOLDER__xdcount-value_w30d6kzcdcfnjxvk94w58nfw",
+    "ct_id": "w30d6kzcdcfnjxvk94w58nfw",
+    "adapter_ctid": "l6i0gdviv1mf1mvu468ersbk",
+    "element_name": "xdcount-value",
+    "type": "XdCount",
+    "label": "Total Population"
+  },
+  "ko1ndwdc6kh8jr39dn9x3wpi": {
+    "placeholder": "__PLACEHOLDER__xdstring-value_ko1ndwdc6kh8jr39dn9x3wpi",
+    "ct_id": "ko1ndwdc6kh8jr39dn9x3wpi",
+    "adapter_ctid": null,
+    "element_name": "xdstring-value",
+    "type": "XdString",
+    "label": "Total Population_units"
+  },
+  "hzsoktbrtlhowsl71kywg81w": {
+    "placeholder": "__PLACEHOLDER__xdquantity-value_hzsoktbrtlhowsl71kywg81w",
+    "ct_id": "hzsoktbrtlhowsl71kywg81w",
+    "adapter_ctid": "txtihqagrvlzslytgyns5aer",
+    "element_name": "xdquantity-value",
+    "type": "XdQuantity",
+    "label": "Adult Population Percentage"
+  },
+  "w9prqlh0m9jdng93uwz6hqwz": {
+    "placeholder": "__PLACEHOLDER__xdstring-value_w9prqlh0m9jdng93uwz6hqwz",
+    "ct_id": "w9prqlh0m9jdng93uwz6hqwz",
+    "adapter_ctid": null,
+    "element_name": "xdstring-value",
+    "type": "XdString",
+    "label": "Adult Population Percentage_units"
+  }
+}
