@@ -67,6 +67,25 @@ The [NIEM examples](./source_templates/NIEM/) demonstrate enterprise-grade data 
 
 The [NIH-CDE examples](./source_templates/NIH-CDE/) demonstrate healthcare and clinical research data modeling using NIH Common Data Elements standards.
 
+> **Note**: NIH-CDE examples are being developed. Check back for updates.
+
+### CSV Examples (Direct Upload)
+
+The [CSV examples](./source_templates/CSV/) demonstrate SDCStudio's ability to automatically generate data models directly from CSV files - no template required.
+
+| Example | Domain | Description |
+|---------|--------|-------------|
+| [StatePopulation.csv](./source_templates/CSV/StatePopulation.csv) | Demographics | US state population data with adult population percentages |
+| [test_data3.csv](./source_templates/CSV/test_data3.csv) | General | Simple person records (name, DOB, city) |
+
+**Key Features Demonstrated:**
+- Direct CSV upload without manual template creation
+- Automatic column type inference (text, integer, decimal, date)
+- AI-powered semantic enrichment of column descriptions
+- Constraint detection from data patterns
+
+This is the fastest way to get started - just upload a CSV and SDCStudio generates a complete SDC4-compliant data model.
+
 ---
 
 ## Generated Outputs
@@ -222,21 +241,24 @@ SDCStudio_Examples/
 ├── README.md                    # This file
 ├── LICENSE                      # Apache 2.0 License
 ├── source_templates/            # Input templates for SDCStudio
-│   ├── NIEM/                    # NIEM 6.0 compliant examples
-│   │   ├── README.md            # NIEM examples documentation
+│   ├── NIEM/                    # NIEM 6.0 compliant examples (Markdown templates)
+│   │   ├── README.md
 │   │   ├── 01-niem-code-lists-bundle.md
 │   │   ├── 02-niem-core-components-bundle.md
 │   │   ├── example-arrest-report.md
 │   │   ├── example-incident-report.md
 │   │   ├── example-visa-application.md
 │   │   └── example-vessel-arrival-report.md
-│   └── NIH-CDE/                 # NIH Common Data Elements examples
+│   ├── CSV/                     # CSV direct upload examples
+│   │   ├── StatePopulation.csv  # US state demographics
+│   │   └── test_data3.csv       # Simple person records
+│   └── NIH-CDE/                 # NIH Common Data Elements (coming soon)
 │       └── README.md
 └── downloads/                   # Generated output packages
     ├── README.md                # Downloads documentation
-    ├── model_pkgs/              # Data model packages
-    ├── Enterprise/              # Enterprise application packages
-    └── OS/                      # Open source application packages
+    ├── model_pkgs/              # Schema-only packages (XSD, XML, JSON, RDF, etc.)
+    ├── Enterprise/              # Full enterprise application packages
+    └── OS/                      # Lightweight/open source packages
 ```
 
 ---
